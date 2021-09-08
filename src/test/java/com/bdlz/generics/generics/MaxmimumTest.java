@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaxmimumTest {
+
     @Test
     public void intMax() {
         int actualResult = Maximum.findMaximum(9,10,5);

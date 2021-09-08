@@ -10,6 +10,9 @@ public class Maximum<E extends Comparable> {
         this.value2 = value2;
         this.value3 = value3;
     }
+    public E findMaximum() {
+        return Maximum.findMaximum(value1, value2, value3);
+    }
 
     public static< E extends Comparable> E findMaximum(E value1, E value2, E value3) {
 
