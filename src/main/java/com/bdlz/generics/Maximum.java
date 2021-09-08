@@ -1,15 +1,25 @@
 package com.bdlz.generics;
 
-public class Maximum {
+public class Maximum<E extends Comparable> {
 
-    public static< E extends Comparable> E findMaximum(E a, E b, E c) {
+    E value1;
+    E value2;
+    E value3;
+    Maximum(E value1, E value2, E value3) {
+        this.value1 = value1;
+        this.value2 = value2;
+        this.value3 = value3;
+    }
 
-            E max = a;
-            if (b.compareTo(a)>0 && b.compareTo(c)>0) {
-                max = b;
-            } if (c.compareTo(max) > 0) {
-                max = c;
+    public static< E extends Comparable> E findMaximum(E value1, E value2, E value3) {
+
+            E max = value1;
+            if (value2.compareTo(value1)>0 && value2.compareTo(value3)>0) {
+                max = value2;
+            } if (value3.compareTo(max) > 0) {
+                max = value3;
             }
+        System.out.println(max);
            return (max);
         }
     }
