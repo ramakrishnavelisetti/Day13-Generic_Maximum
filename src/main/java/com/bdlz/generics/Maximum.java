@@ -2,9 +2,9 @@ package com.bdlz.generics;
 
 public class Maximum {
 
-    public static String findMaximum(String a, String b, String c) {
+    public static< E extends Comparable> E findMaximum(E a, E b, E c) {
 
-            String max = a;
+            E max = a;
             if (b.compareTo(a)>0 && b.compareTo(c)>0) {
                 max = b;
             } if (c.compareTo(max) > 0) {
