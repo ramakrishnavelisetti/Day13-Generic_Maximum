@@ -6,19 +6,19 @@ import org.junit.Test;
 
 public class MaxmimumTest {
     @Test
-    public void floatMax_AtFirstPosition() {
-        float actualResult = Maximum.findMaximum(8.2f,2.4f,6.1f);
-        Assert.assertEquals(8.2f,actualResult,0.0);
+    public void stringMax_AtFirstPosition() {
+        String actualResult = Maximum.findMaximum("Peach","Apple","Banana");
+        Assert.assertEquals("Peach",actualResult);
     }
     @Test
-    public void floatMax_AtSecondPosition() {
-        float actualResult = Maximum.findMaximum(2.4f,8.2f,6.1f);
-        Assert.assertEquals(8.2f,actualResult,0.0);
+    public void stringMax_AtSecondPosition() {
+        String actualResult = Maximum.findMaximum("Apple","Peach","Banana");
+        Assert.assertEquals("Peach",actualResult);
     }
     @Test
     public void floatMax_AtThirdPosition() {
-        float actualResult = Maximum.findMaximum(2.4f,6.1f,8.2f);
-        Assert.assertEquals(8.2f,actualResult,0.0);
+        String actualResult = Maximum.findMaximum("Apple","Banana","Peach");
+        Assert.assertEquals("Peach",actualResult);
     }
 }
 
